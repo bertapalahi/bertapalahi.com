@@ -162,12 +162,15 @@ footer{
 	background-color: transparent;
 	cursor: pointer;
 	font-family: montserrat;
+	font-size: 20px;
+	color: #272727;
 }
 
 .btn:hover{
 	box-shadow: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
 	transition: transform 150ms;
 	transform: scale(1.03);
+	color: #cbddd1;
 }
 
 .btn-right{
@@ -178,14 +181,17 @@ footer{
 	cursor: pointer;
 	font-family: montserrat;
 	position: absolute;
-    top: 20px;
-    right: 20px;
+    	top: 20px;
+    	right: 20px;
+	font-size: 20px;
+	color: #272727;
 }
 
 .btn-right:hover{
 	box-shadow: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
 	transition: transform 150ms;
 	transform: scale(1.03);
+	color: #cbddd1;
 }
 
 .photo{
