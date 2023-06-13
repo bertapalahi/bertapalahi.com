@@ -31,13 +31,14 @@ img{
 	width: 300px;
 	height: 300px;
 }
-/*
+
 img:hover{
 	transform: scale(1.02);
 }
-
+/*
 .fade {
-opacity: 1;} /* Opcional: Aplica la opacidad 1 a las imágenes cargadas */
+opacity: 1;}
+*/
 
 
 .image-gallery{
