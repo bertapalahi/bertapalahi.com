@@ -86,7 +86,7 @@ opacity: 1;} /* Opcional: Aplica la opacidad 1 a las imágenes cargadas */
 	text-align: center;
 	font-size: 30px;
 	overflow: auto;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	background-image: url(../ber_photos/elcel.JPG);
 	background-size: 40% auto;
 	background-position: center;
