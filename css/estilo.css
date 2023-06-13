@@ -54,7 +54,7 @@ opacity: 1;} /* Opcional: Aplica la opacidad 1 a las imágenes cargadas */
 /* Móviles en horizontal o tablets en vertical */
 
 @media (max-width: 767px) { 
-    #galeria {
+    .image-gallery {
         columns:2;
     }
 
@@ -63,7 +63,7 @@ opacity: 1;} /* Opcional: Aplica la opacidad 1 a las imágenes cargadas */
 /* Móviles en vertical */
 
 @media (max-width: 480px) {
-    #galeria {
+    .image-gallery {
         columns: 1;
     }
 }
