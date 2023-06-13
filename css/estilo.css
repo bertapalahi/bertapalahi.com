@@ -1,0 +1,200 @@
+/** {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}*/
+
+body{
+	font-family: montserrat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center cover;
+	background-color: #efedee;
+	color: #272727;
+}
+
+h1{
+	font-weight: normal;
+	font-size: 60px;
+}
+
+h2{
+	font-weight: normal;
+	font-family: montserrat;
+	font-size: 30px;
+}
+
+img{
+	/*opacity: 0;*/
+	transition: 0.5s;
+  	object-fit: contain;
+	width: 300px;
+	height: 300px;
+}
+/*
+img:hover{
+	transform: scale(1.02);
+}
+
+.fade {
+opacity: 1;} /* Opcional: Aplica la opacidad 1 a las imágenes cargadas */
+
+
+.image-gallery{
+	/*margin: 90px;
+	align-items: center;*/
+	display: grid;
+	margin: 1rem auto;
+	width:100%;
+	margin: 0px auto;
+	column-count: 2;
+	
+}
+
+/* Móviles en horizontal o tablets en vertical */
+
+@media (max-width: 767px) { 
+    #galeria {
+        columns:2;
+    }
+
+}
+        
+/* Móviles en vertical */
+
+@media (max-width: 480px) {
+    #galeria {
+        columns: 1;
+    }
+}
+
+.logo img{
+	width: 100px;
+	height: 100px;
+}
+
+.logo img:hover{
+	transform: scale(1.3);
+}
+
+.title{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-size: 30px;
+	overflow: auto;
+	background-attachment: fixed;
+	background-image: url(../ber_photos/elcel.JPG);
+	background-size: 40% auto;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+footer{
+	text-align: center;
+	margin: 50px;
+}
+
+.wrapper .carousel{
+	white-space: nowrap;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.wrapper{
+	max-width: 1200px;
+	text-align: center;
+	margin: 50px;
+	padding: 15px 0;
+}
+
+
+.carousel img{
+	height: 340px;
+	width: calc(100%/3);
+	object-fit: cover;
+	margin-left: 14px;
+}
+
+.about{
+	background-color: #efedee;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+}
+
+.about-me{
+	height: 90vh;
+	display: flex;
+    align-items: center;
+	margin: 0;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.info {
+	padding: 5px;
+	box-sizing: content-box;
+	justify-content: space-between;
+    text-align: left;
+	line-height: 1.5;
+	margin-right: 80px;
+}
+
+@media screen and (max-width:600px) {
+	.column {
+	  width: 100%;
+	}
+  }
+
+.btn{
+	border: none;
+	padding: 10px; /*espacio alrededor texto*/
+	/*border-radius: 5px; bordes redondos*/
+	background-color: transparent;
+	cursor: pointer;
+	font-family: montserrat;
+}
+
+.btn:hover{
+	box-shadow: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+	transition: transform 150ms;
+	transform: scale(1.03);
+}
+
+.btn-right{
+	border: none;
+	padding: 10px; /*espacio alrededor texto*/
+	/*border-radius: 5px; bordes redondos*/
+	background-color: transparent;
+	cursor: pointer;
+	font-family: montserrat;
+	position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.btn-right:hover{
+	box-shadow: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+	transition: transform 150ms;
+	transform: scale(1.03);
+}
+
+.photo{
+	flex: 0 0 30%;
+    margin-right: 20px;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	color: #272727;
+	cursor: pointer;
+  }
