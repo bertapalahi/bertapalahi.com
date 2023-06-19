@@ -124,14 +124,13 @@ footer{
 .about{
 	background-color: #efedee;
 	background-size: cover;
-	background-attachment: fixed;
 	width: 100%;
 }
 
 .about-me{
 	height: 90vh;
 	display: flex;
-    align-items: center;
+    	align-items: center;
 	margin: 0;
 	padding: 10px;
 	display: flex;
