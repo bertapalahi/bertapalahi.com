@@ -77,6 +77,11 @@ opacity: 1;}
 	.title{
 	background-size: 60% auto;
 	}
+	.info {
+		flex-direction: column; /* Cambia la dirección del flexbox a columna */
+		text-align: center; /* Centra el texto en dispositivos móviles */
+		margin-right: 0; /* Elimina el margen derecho en dispositivos móviles */
+	}
 }
 
 .logo img{
@@ -153,16 +158,10 @@ footer{
 	padding: 5px;
 	box-sizing: content-box;
 	justify-content: space-between;
-    text-align: left;
+    	text-align: left;
 	line-height: 1.5;
 	margin-right: 80px;
 }
-
-@media screen and (max-width:600px) {
-	.column {
-	  width: 100%;
-	}
-  }
 
 .btn{
 	border: none;
