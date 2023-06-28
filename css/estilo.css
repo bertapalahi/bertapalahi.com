@@ -67,6 +67,13 @@ opacity: 1;}
     .image-gallery {
         columns: 1;
     }
+	h1{
+	font-size: 40px;
+	}
+
+	h2{
+	font-size: 20px;
+	}
 }
 
 .logo img{
