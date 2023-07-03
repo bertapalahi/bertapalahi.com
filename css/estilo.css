@@ -78,9 +78,8 @@ opacity: 1;}
 	background-size: 60% auto;
 	}
 	.info {
-		flex-direction: column; /* Cambia la dirección del flexbox a columna */
-		text-align: center; /* Centra el texto en dispositivos móviles */
-		margin-right: 0; /* Elimina el margen derecho en dispositivos móviles */
+		font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+		padding: 20px; /* Ajusta el espaciado interno según tus preferencias */
 	}
 }
 
