@@ -216,3 +216,30 @@ a {
 a:hover{
 	color: #cbddd1;
 }
+
+
+.navbar {
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	margin-top: auto;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #333;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background-color: #ddd;
+}
+
+.navbar a.active {
+	background-color: #272727;
+	color: white;
+}
