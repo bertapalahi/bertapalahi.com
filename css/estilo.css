@@ -24,17 +24,7 @@ h2{
 	font-size: 30px;
 }
 
-img{
-	/*opacity: 0;*/
-	transition: 0.5s;
-  	object-fit: contain;
-	width: 300px;
-	height: 300px;
-}
 
-img:hover{
-	transform: scale(1.02);
-}
 /*
 .fade {
 opacity: 1;}
@@ -58,6 +48,10 @@ opacity: 1;}
     .image-gallery {
         columns:2;
     }
+	.logo img{
+		width: 5px;
+		height: 5px;
+	}
 
 }
         
@@ -75,11 +69,16 @@ opacity: 1;}
 	font-size: 20px;
 	}
 	.title{
-	background-size: 60% auto;
+	background-size: 100% auto;
 	}
 	.info {
-		font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
-		padding: 20px; /* Ajusta el espaciado interno según tus preferencias */
+		flex-direction: column; /* Cambia la dirección del flexbox a columna */
+		text-align: center; /* Centra el texto en dispositivos móviles */
+		margin-right: 0; /* Elimina el margen derecho en dispositivos móviles */
+	}
+	.logo img{
+		width: 5px;
+		height: 5px;
 	}
 }
 
@@ -102,7 +101,7 @@ opacity: 1;}
 	font-size: 30px;
 	overflow: auto;
 	/*background-attachment: fixed;*/
-	background-image: url(../ber_photos/elcel.JPG);
+	background-image: url(../ber_photos/elcel.webp);
 	background-size: 90% auto;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -216,7 +215,6 @@ a {
 a:hover{
 	color: #cbddd1;
 }
-
 
 .navbar {
 	overflow: hidden;
