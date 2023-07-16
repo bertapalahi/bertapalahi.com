@@ -8,19 +8,36 @@
 	<title>contacta'm</title>
 	<link rel="stylesheet" href="css/estilo.css">
 	<link rel="shortcut icon" href="ber_photos/photober.webp" />
+	<style>
+		img{
+			/*opacity: 0;*/
+			transition: 0.5s;
+			object-fit: contain;
+			width: 300px;
+			height: 300px;
+		}
+
+		img:hover{
+			transform: scale(1.02);
+		}
+	</style>
 </head>
 <body>
+	<div class="navbar">
+		<a href="index.html">Inici</a>
+		<a href="casaments.html">Casaments</a>
+		<a href="interiors.html">Interiorisme</a>
+		<a href="altres.html">Altres</a>
+		<a class="active" href="#">Sobre Mi</a>
+	</div>
+	
 	<div class="about">
-		<div class="navbar">
-			<a href="index.html">Inici</a>
-			<a href="..">Casaments</a>
-			<a href="..">Interiorisme</a>
-			<a href="..">Esports</a>
-			<a class="active" href="#">Sobre Mi</a>
-		</div>
+		<!--<form>
+			<input class="btn" type="button" value="<< Inici" onclick="window.location.href='index.html'">
+		</form>-->
 		<div class="about-me">
 			<div class="photo">
-				<img src="ber_photos/woman.webp" alt="berta amb la càmara a la mà" loading="lazy">
+				<img src="ber_photos/woman.webp" alt="berta amb la càmara a la mà">
 			</div>
 			<div class="info">
 				<h2>Berta Palahí</h2>
@@ -31,11 +48,5 @@
 			</div>
 		</div>
 	</div>
-
-	<footer>
-		<p>
-			© 2023 Berta Palahí. All rights reserved
-		</p>
-	</footer>
 </body>
 </html>

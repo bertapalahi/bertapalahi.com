@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="utf-8">
+	<meta name="fotografa a girona" content="fotografies i contacte">
+	<meta name="description" content="Pagina de fotografa, contiene fotografias e información de la fotografa">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="ber_photos/photober.webp" />
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Casaments</title>
+    <style>
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            text-align: center;
+        }
+
+        .lightbox img {
+            max-height: 90vh;
+            max-width: 90vw;
+            margin-top: 5vh;
+        }
+    </style>
+</head>
+<body>
+	<div class="navbar">
+		<a href="index.html">Inici</a>
+		<a class="active" href="#">Casaments</a>
+		<a href="interiors.html">Interiorisme</a>
+		<a href="altres.html">Altres</a>
+		<a href="contact.html">Sobre Mi</a>
+	</div>
+
+    <div class="container">
+        <div class="gallery">
+            <img src="ber_photos/fotocasament4.webp" alt="fotograf casament" onclick="openLightbox('ber_photos/fotocasament4.webp')" height="50px">
+            <img src="ber_photos/fotocasament5.webp" alt="fotograf casament" onclick="openLightbox('ber_photos/fotocasament5.webp')" height="50px">
+            <img src="ber_photos/fotocasament3.webp" alt="fotograf casament" onclick="openLightbox('ber_photos/fotocasament3.webp')" height="50px">
+            <img src="ber_photos/boda.webp" alt="fotògrafa de casament" onclick="openLightbox('ber_photos/boda.webp')" height="50px">
+            <img src="ber_photos/fotocasament1.webp" alt="fotograf casament" onclick="openLightbox('ber_photos/fotocasament1.webp')" height="50px">
+            <img src="ber_photos/fotocasament8.webp" alt="fotograf casament" onclick="openLightbox('ber_photos/fotocasament8.webp')" height="50px">
+            <img src="ber_photos/fotocasament2.webp" alt="fotograf casament" onclick="openLightbox('ber_photos/fotocasament2.webp')" height="50px">
+            <img src="ber_photos/casament1.webp" alt="fotògrafa de casament" onclick="openLightbox('ber_photos/casament1.webp')" height="50px">
+            <img src="ber_photos/fotocasament6.webp" alt="fotograf casament" onclick="openLightbox('ber_photos/fotocasament6.webp')" height="50px">
+            <img src="ber_photos/fotocasament11.webp" alt="fotògrafa de casament" onclick="openLightbox('ber_photos/fotocasament11.webp')" height="50px">
+            <img src="ber_photos/fotocasament7.webp" alt="fotograf casament" onclick="openLightbox('ber_photos/fotocasament7.webp')" height="50px">
+            <img src="ber_photos/casament2.webp" alt="fotògrafa de casament" onclick="openLightbox('ber_photos/casament2.webp')" height="50px">
+
+            <!--<img src="ber_photos/fotocasament9.webp" alt="fotograf casament" onclick="openLightbox('ber_photos/fotocasament9.webp')" height="50px">
+            <img src="ber_photos/fotocasament10.webp" alt="fotograf casament" onclick="openLightbox('ber_photos/fotocasament10.webp')" height="50px">-->
+        </div>
+    </div>
+
+    <div class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-image" src="" alt="Imagen Ampliada">
+    </div>
+
+    <script>
+        function openLightbox(imageUrl) {
+            var lightbox = document.querySelector('.lightbox');
+            var lightboxImage = document.getElementById('lightbox-image');
+            lightboxImage.src = imageUrl;
+            lightbox.style.display = 'block';
+        }
+
+        function closeLightbox() {
+            var lightbox = document.querySelector('.lightbox');
+            lightbox.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
