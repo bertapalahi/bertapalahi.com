@@ -9,58 +9,42 @@
     <link rel="stylesheet" href="css/estilo.css">
     <title>Interiors</title>
     <style>
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 20px;
-            margin-top: 20px;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 9999;
+        .imatge {
             text-align: center;
+            margin: 20px;
+            position: relative; /* Afegeix una posició relativa al contenidor de la imatge */
         }
 
-        .lightbox img {
-            max-height: 90vh;
-            max-width: 90vw;
-            margin-top: 5vh;
+        .imatge a {
+            text-decoration: none;
+            color: inherit;
+            display: block; /* Fes l'enllaç un element de bloc perquè ocupi tot l'espai disponible */
+            overflow: hidden; /* Evita que el text es desborde fora de la imatge */
+        }
+
+        .imatge img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text {
+            position: absolute; /* Afegeix una posició absoluta per col·locar el text sobre la imatge */
+            bottom: 0; /* Col·loca el text a la part inferior */
+            width: 100%; /* Fes que el text ocupe tot l'ample del contenidor de la imatge */
+            background-color: rgba(255, 255, 255, 0.7); /* Fons semi-transparent per millorar llegibilitat */
+            padding: 10px; /* Espaiat interior del text */
         }
     </style>
 </head>
 <body>
 	<div class="navbar">
 		<a href="index.html">Inici</a>
-		<a href="casaments.html">Casaments</a>
-		<a class="active" href="#">Interiorisme</a>
-		<a href="altres.html">Altres</a>
 		<a href="contact.html">Sobre Mi</a>
 	</div>
 
     <div class="container">
         <div class="gallery">
-			<img src="ber_photos/interiors.webp" alt="fotògrafa de casament" onclick="openLightbox('ber_photos/interiors.webp')" height="500px" loading="lazy">
+            <img src="ber_photos/interiors.webp" onclick="openLightbox('ber_photos/interiors.webp')" height="500px" loading="lazy">
             <img src="ber_photos/interiors1.webp" alt="fotògrafa de casament" onclick="openLightbox('ber_photos/interiors1.webp')" height="500px" loading="lazy">
             <img src="ber_photos/interiors8.webp" alt="fotògrafa de casament" onclick="openLightbox('ber_photos/interiors8.webp')" height="500px" loading="lazy">
             <img src="ber_photos/interiors4.webp" alt="fotògrafa de casament" onclick="openLightbox('ber_photos/interiors4.webp')" height="500px" loading="lazy">

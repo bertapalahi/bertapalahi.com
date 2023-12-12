@@ -5,7 +5,7 @@
 	<meta name="fotografa a girona" content="fotografies i contacte">
 	<meta name="description" content="Pagina de fotografa, contiene fotografias e información de la fotografa">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>bertography</title>
+	<title>Berta Palahí | Fotografia</title>
 	<link rel="stylesheet" href="css/estilo.css">
 	<link rel="shortcut icon" href="ber_photos/photober.webp" />
 	<style>
@@ -23,25 +23,66 @@
 	</style>
 </head>
 <body>
-	<div class="navbar">
-		<a class="active" href="#">Inici</a>
-		<a href="casaments.html">Casaments</a>
-		<a href="interiors.html">Interiorisme</a>
-		<a href="altres.html">Altres</a>
-		<a href="contact.html">Sobre Mi</a>
-	</div>
-
-	<!--<form>
-		<input class="btn-right" type="button" value="Sobre Mi >>" onclick="window.location.href='contact.html'">
-	</form>-->
-
-	<div class="title">
-		<div class="logo">
-			<a href="https://www.instagram.com/ber.tography/"><img src="ber_photos/photober.webp" alt="berta fotografia"></a>
+	<div class="portada">
+		<!--<form>
+			<input class="btn-right" type="button" value="Sobre Mi >>" onclick="window.location.href='contact.html'">
+		</form>-->
+		<div class="navbar">
+			<a class="active" href="#">Inici</a>
+			<a href="contact.html">Sobre Mi</a>
 		</div>
-		<h1>Fotògrafa a Girona | BER TOGRAPHY</h1>
-		<h2>Interiors, casaments, maternitat, esdeveniments esportius i viatges</h2>
+
+		<div class="title">
+			<div class="logo">
+				<a href="https://www.instagram.com/ber.tography/"><img src="ber_photos/photober.webp" alt="berta fotografia"></a>
+			</div>
+			<h1>Fotografa a Girona | Berta Palahí</h1>
+			<h2>Interiors, casaments, maternitat, esdeveniments esportius i viatges</h2>
+		</div>
+	</div>	
+	<div class="container">
+		<h2 class="separador">Fotografia</h2>
+        <div class="gallery">
+			<div class="projects">
+				<img src="ber_photos/interiors.webp" alt="fotògrafa d'interiors" onclick="openLightbox('ber_photos/interiors.webp')" height="500px">
+				<div class="overlay">
+					<div class="text" onclick="window.location.href='interiors.html'">Interiorisme</div>
+				</div>
+			</div>
+			<div class="projects">
+				<img src="ber_photos/fotocasament4.webp" alt="fotògrafa de casament" onclick="openLightbox('ber_photos/interiors.webp')" height="500px">
+				<div class="overlay">
+					<div class="text" onclick="window.location.href='casaments.html'">Casaments</div>
+				</div>
+			</div>
+			<div class="projects">
+				<img src="ber_photos/fotografiamaterinitat1.webp" alt="fotògrafa maternitat" onclick="openLightbox('ber_photos/interiors.webp')" height="500px">
+				<div class="overlay">
+					<div class="text" onclick="window.location.href='altres.html'">Maternitat</div>
+				</div>
+			</div>
+			<div class="projects">
+				<img src="ber_photos/esdevenimentsesportiusfoto.webp" alt="fotògrafa esportiva" onclick="openLightbox('ber_photos/interiors.webp')" height="500px">
+				<div class="overlay">
+					<div class="text" onclick="window.location.href='altres.html'">Esports</div>
+				</div>
+			</div>
+        </div>
+    </div>
+	<div class="container">
+		<h2 class="separador">Projectes</h2>
+		<div class="biggallery">
+			<img src="ber_photos/fotografiacarrer.webp" alt="fotògrafa de carrer" onclick="openLightbox('ber_photos/fotografiacarrer.webp')" height="500px">
+			<div class="overlay">
+				<div class="text" onclick="window.location.href='fotografiacarrer.html'">Fotografia de carrer</div>
+			</div>
+			<img src="ber_photos/indonesia.webp" alt="indonesia" onclick="openLightbox('ber_photos/indonesia.webp')" height="500px">
+			<div class="overlay">
+				<div class="text" onclick="window.location.href='viatges.html'">Indonèsia</div>
+			</div>
+		</div>
 	</div>
+	
 
 	<footer>
 		<p>
