@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="utf-8">
+	<meta name="fotografa a girona" content="fotografies i contacte">
+	<meta name="description" content="Pagina de fotografa, contiene fotografias e información de la fotografa">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="ber_photos/photober.webp" />
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Esport</title>
+</head>
+<body>
+	<div class="navbar">
+        <a href="index.html">Inici</a>
+        <a href="contact.html">Sobre Mi</a>
+    </div>
+
+    <div class="container">
+        <div class="gallery">
+            <img src="ber_photos/esport/IMG_8104.webp" alt="fotògrafa esportiva" onclick="openLightbox('ber_photos/esport/IMG_8104.webp')" height="500px" loading="lazy">
+            <img src="ber_photos/esport/esdevenimentvoleibol1.webp" alt="fotògrafa esportiva" onclick="openLightbox('ber_photos/esport/esdevenimentvoleibol1.webp')" height="500px" loading="lazy">
+            <img src="ber_photos/esport/esdevenimentsesportiusfoto.webp" alt="fotògrafa esportiva" onclick="openLightbox('ber_photos/esport/esdevenimentsesportiusfoto.webp')" height="500px" loading="lazy">
+			<img src="ber_photos/esport/esdevenimentvoleibol.webp" alt="fotògrafa esportiva" onclick="openLightbox('ber_photos/esport/esdevenimentvoleibol.webp')" height="500px" loading="lazy">  
+            <img src="ber_photos/esport/skate3.webp" alt="fotògrafa esportiva" onclick="openLightbox('ber_photos/esport/running.webp')" height="500px" loading="lazy">
+            <img src="ber_photos/esport/esdevenimentskate.webp" alt="fotògrafa esportiva" onclick="openLightbox('ber_photos/esport/skate3.webp')" height="500px" loading="lazy">
+            <img src="ber_photos/esport/skate.webp" alt="fotògrafa esportiva" onclick="openLightbox('ber_photos/esport/skate.webp')" height="500px" loading="lazy">
+            <img src="ber_photos/esport/snow.webp" alt="fotògrafa esportiva" onclick="openLightbox('ber_photos/esport/snow.webp')" height="500px" loading="lazy">
+            <img src="ber_photos/esport/surf1.webp" alt="fotògrafa esportiva" onclick="openLightbox('ber_photos/esport/surf1.webp')" height="500px" loading="lazy">
+            <img src="ber_photos/esport/surf.webp" alt="fotògrafa esportiva" onclick="openLightbox('ber_photos/esport/surf.webp')" height="500px" loading="lazy">
+            <img src="ber_photos/esport/ski.webp" alt="fotògrafa esportiva" onclick="openLightbox('ber_photos/esport/ski.webp')" height="500px" loading="lazy">
+            <img src="ber_photos/esport/kayak.webp" alt="fotògrafa esportiva" onclick="openLightbox('ber_photos/esport/kayak.webp')" height="500px" loading="lazy">
+        </div>
+    </div>
+
+    <div class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-image" src="" alt="Imagen Ampliada">
+    </div>
+
+    <script>
+        function openLightbox(imageUrl) {
+            var lightbox = document.querySelector('.lightbox');
+            var lightboxImage = document.getElementById('lightbox-image');
+            lightboxImage.src = imageUrl;
+            lightbox.style.display = 'block';
+        }
+
+        function closeLightbox() {
+            var lightbox = document.querySelector('.lightbox');
+            lightbox.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

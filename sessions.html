@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="utf-8">
+	<meta name="fotografa a girona" content="fotografies i contacte">
+	<meta name="description" content="conté fotografies de maternitat">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="ber_photos/photober.webp" />
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Sessions</title>
+</head>
+<body>
+	<div class="navbar">
+        <a href="index.html">Inici</a>
+        <a href="contact.html">Sobre Mi</a>
+    </div>
+
+    <div class="container">
+        <div class="gallery">
+            <img src="ber_photos/sessions/sessio.webp" alt="sessions fotografiques" onclick="openLightbox('ber_photos/sessions/sessio.webp')" height="500px" loading="lazy">  
+            <img src="ber_photos/sessions/sessio1.webp" alt="sessions fotografiques" onclick="openLightbox('ber_photos/sessions/sessio1.webp')" height="500px" loading="lazy">  
+            <img src="ber_photos/sessions/sessio2.webp" alt="sessions fotografiques" onclick="openLightbox('ber_photos/sessions/sessio2.webp')" height="500px" loading="lazy">  
+            <img src="ber_photos/sessions/sessio3.webp" alt="sessions fotografiques" onclick="openLightbox('ber_photos/sessions/sessio3.webp')" height="500px" loading="lazy">  
+            <img src="ber_photos/sessions/sessio4.webp" alt="sessions fotografiques" onclick="openLightbox('ber_photos/sessions/sessio4.webp')" height="500px" loading="lazy">  
+            <img src="ber_photos/sessions/sessio5.webp" alt="sessions fotografiques" onclick="openLightbox('ber_photos/sessions/sessio5.webp')" height="500px" loading="lazy">
+            <img src="ber_photos/sessions/sessio6.webp" alt="sessions fotografiques" onclick="openLightbox('ber_photos/sessions/sessio6.webp')" height="500px" loading="lazy">
+            <img src="ber_photos/sessions/sessio7.webp" alt="sessions fotografiques" onclick="openLightbox('ber_photos/sessions/sessio7.webp')" height="500px" loading="lazy">  
+            <img src="ber_photos/maternitat/embaraçgirona.webp" alt="sessions fotografiques maternitat" onclick="openLightbox('ber_photos/maternitat/embaraçgirona.webp')" height="500px" loading="lazy">
+            <img src="ber_photos/maternitat/fotografiamaterinitat1.webp" alt="sessions fotografiques" onclick="openLightbox('ber_photos/maternitat/fotografiamaterinitat1.webp')" height="500px" loading="lazy">
+            <img src="ber_photos/maternitat/fotografiamaternitat2.webp" alt="sessions fotografiques" onclick="openLightbox('ber_photos/maternitat/fotografiamaternitat2.webp')" height="500px" loading="lazy">
+			<img src="ber_photos/maternitat/fotografiamaternitat3.webp" alt="sessions fotografiques" onclick="openLightbox('ber_photos/maternitat/fotografiamaternitat3.webp')" height="500px" loading="lazy"> 
+        </div>
+    </div>
+
+    <div class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-image" src="" alt="Imagen Ampliada">
+    </div>
+
+    <script>
+        function openLightbox(imageUrl) {
+            var lightbox = document.querySelector('.lightbox');
+            var lightboxImage = document.getElementById('lightbox-image');
+            lightboxImage.src = imageUrl;
+            lightbox.style.display = 'block';
+        }
+
+        function closeLightbox() {
+            var lightbox = document.querySelector('.lightbox');
+            lightbox.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
