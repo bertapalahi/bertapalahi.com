@@ -8,6 +8,9 @@
 	<title>contacta'm</title>
 	<link rel="stylesheet" href="css/estilo.css">
 	<link rel="shortcut icon" href="ber_photos/photober.webp" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Alegreya:ital@0&display=swap" rel="stylesheet">
 	<style>
 		img{
 			/*opacity: 0;*/
@@ -20,6 +23,93 @@
 		img:hover{
 			transform: scale(1.02);
 		}
+
+        .img1 {
+            width: 200px;
+            top: 50px;
+            left: 50px;
+            z-index: 1; /* Controla la superposició d'elements */
+        }
+
+        .img2 {
+            width: 250px;
+            top: 120px;
+            left: 120px;
+            z-index: 2;
+        }
+
+		.form{
+			margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+		}
+
+		form {
+			background-color: #fff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+			font-family: 'Amiri', serif;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #272727;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #272727;
+        }
+
+		.about{
+			font-family: 'Amiri', serif;
+		}
+
+		.social-container {
+            top: 10px;
+            right: 10px;
+        }
+
+        .instagram-btn {
+            background-color: #cbddd1;
+            color: #272727;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            align-items: center;
+			display:flex;
+        }
+
+		.instagram-btn:hover{
+			cursor: pointer;
+			color: #272727;
+		}
+
+        .instagram-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
 	</style>
 </head>
 <body>
@@ -29,21 +119,53 @@
 	</div>
 	
 	<div class="about">
-		<!--<form>
-			<input class="btn" type="button" value="<< Inici" onclick="window.location.href='index.html'">
-		</form>-->
 		<div class="about-me">
 			<div class="photo">
-				<img src="ber_photos/woman.webp" alt="berta amb la càmara a la mà">
+				<!--<img src="ber_photos/woman.webp" alt="berta amb la càmara a la mà" class="img1">
+				--><img src="ber_photos/bertography.JPG" alt="berta amb la càmara a la mà" class="img2">
 			</div>
 			<div class="info">
-				<h2>Berta Palahí</h2>
+				<h4>Berta Palahí</h4>
 				<p>De Girona. Amb la càmera a la mà des dels dotze anys. M'agrada molt observar, i intento captar allò que em sembla bonic. De la fotografia busco l'espontaneïtat i transmetre emocions. Cada vegada que capturo és una oportunitat per a explicar una història, per a captar la bellesa en els detalls més petits i per a immortalitzar instants plens de significat. El meu objectiu és crear imatges autèntiques i emotives que connectin amb les persones i els facin sentir. Acompanya'm en aquest viatge!</p>
-				<a href="mailto:elcorreoquequieres@correo.com">palahi.berta@gmail.com</a>
-				<br>
-				<a href="https://www.instagram.com/ber.tography/">@ber.tography</a>
+				<div class="social-container">
+					<a href="https://www.instagram.com/ber.tography" target="_blank" class="instagram-btn">
+						<img src="ber_photos/instagram-icon.webp" alt="Instagram Icon" class="instagram-icon">
+						Segueix-me per saber-ne més
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
+	<h2>Contacta</h2>
+	<div class="form">
+		<form action="processar_formulari.php" method="post">
+			<!-- Nom -->
+			<label for="nom">Nom</label>
+			<input type="text" id="nom" name="nom" required>
+	
+			<br>
+	
+			<!-- Correu electrònic -->
+			<label for="email">Correu electrònic</label>
+			<input type="email" id="email" name="email" required>
+	
+			<br>
+	
+			<!-- Missatge -->
+			<label for="missatge">Missatge</label>
+			<textarea id="missatge" name="missatge" rows="4" required></textarea>
+	
+			<br>
+	
+			<!-- Botó d'enviament -->
+			<input type="submit" value="Enviar">
+		</form>
+	</div>
+
+	<footer>
+		<p>
+			© 2024 Berta Palahí. All rights reserved
+		</p>
+	</footer>
 </body>
 </html>
