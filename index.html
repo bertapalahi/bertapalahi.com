@@ -2,16 +2,29 @@
 <html lang="ca">
 <head>
 	<meta charset="utf-8">
-	<meta name="fotografa a girona" content="fotografies i contacte">
+	<meta name="author" content="fotografies i contacte">
 	<meta name="description" content="Pagina de fotografa, contiene fotografias e información de la fotografa">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Berta Palahí | Fotografia</title>
-	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/estilo.min.css">
 	<link rel="shortcut icon" href="ber_photos/photober.webp" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Alegreya:ital@0&display=swap" rel="stylesheet">
 	<style>
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			grid-gap: 20px;
+			margin-top: 20px;
+		}
+
+		.gallery img {
+			width: 100%;
+			height: auto;
+			border-radius: 5px;
+			cursor: pointer;
+		}
 		img{
 			/*opacity: 0;*/
 			transition: 0.5s;

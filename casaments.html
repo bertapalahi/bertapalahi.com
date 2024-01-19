@@ -6,7 +6,8 @@
 	<meta name="description" content="Pagina de fotografa, contiene fotografias e información de la fotografa">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="ber_photos/photober.webp" />
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
     <title>Casaments</title>
 </head>
 <body>
@@ -16,7 +17,8 @@
 	</div>
 
     <div class="container">
-        <div class="gallery">
+        <div class="grid" data-masonry='{ "columnWidth": 200, "itemSelector": ".grid-item" }'>
+            <h2 class="separador">Fotografia de casaments</h2>
             <img src="ber_photos/casament/fotocasament4.webp" alt="fotograf casament" onclick="openLightbox('ber_photos/fotocasament4.webp')" height="50px">
             <img src="ber_photos/casament/fotocasament5.webp" alt="fotograf casament" onclick="openLightbox('ber_photos/fotocasament5.webp')" height="50px">
             <img src="ber_photos/casament/fotocasament3.webp" alt="fotograf casament" onclick="openLightbox('ber_photos/fotocasament3.webp')" height="50px">
@@ -39,18 +41,6 @@
         <img id="lightbox-image" src="" alt="Imagen Ampliada">
     </div>
 
-    <script>
-        function openLightbox(imageUrl) {
-            var lightbox = document.querySelector('.lightbox');
-            var lightboxImage = document.getElementById('lightbox-image');
-            lightboxImage.src = imageUrl;
-            lightbox.style.display = 'block';
-        }
-
-        function closeLightbox() {
-            var lightbox = document.querySelector('.lightbox');
-            lightbox.style.display = 'none';
-        }
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>

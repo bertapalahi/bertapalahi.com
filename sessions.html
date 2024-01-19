@@ -3,10 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="fotografa a girona" content="fotografies i contacte">
-	<meta name="description" content="conté fotografies de maternitat">
+	<meta name="description" content="conté sessions fotografiques">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="ber_photos/photober.webp" />
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
     <title>Sessions</title>
 </head>
 <body>
@@ -16,7 +17,8 @@
     </div>
 
     <div class="container">
-        <div class="gallery">
+        <div class="grid" data-masonry='{ "columnWidth": 200, "itemSelector": ".grid-item" }'>
+            <h2 class="separador">Sessions fotogràfiques</h2>
             <img src="ber_photos/sessions/sessio.webp" alt="sessions fotografiques" onclick="openLightbox('ber_photos/sessions/sessio.webp')" height="500px" loading="lazy">  
             <img src="ber_photos/sessions/sessio1.webp" alt="sessions fotografiques" onclick="openLightbox('ber_photos/sessions/sessio1.webp')" height="500px" loading="lazy">  
             <img src="ber_photos/sessions/sessio2.webp" alt="sessions fotografiques" onclick="openLightbox('ber_photos/sessions/sessio2.webp')" height="500px" loading="lazy">  
@@ -36,18 +38,6 @@
         <img id="lightbox-image" src="" alt="Imagen Ampliada">
     </div>
 
-    <script>
-        function openLightbox(imageUrl) {
-            var lightbox = document.querySelector('.lightbox');
-            var lightboxImage = document.getElementById('lightbox-image');
-            lightboxImage.src = imageUrl;
-            lightbox.style.display = 'block';
-        }
-
-        function closeLightbox() {
-            var lightbox = document.querySelector('.lightbox');
-            lightbox.style.display = 'none';
-        }
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
