@@ -1,0 +1,396 @@
+/** {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}*/
+
+/*fons de la pagina total*/
+body{
+	font-family: 'Alegreya', serif;
+	font-style: normal;
+	color: #272727;
+	height: 100%;
+    margin: 0;
+    padding: 0;
+	background-color: #efedee;
+}
+
+/*portada*/
+.portada{
+	background-image: url(../ber_photos/elcel.webp);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh; /* Assegura't que la portada ocupi l'alçada completa de la finestra del navegador */
+    margin: 0; /* Elimina marges que podrien afectar l'alçada total */
+}
+
+/*titol i subtitol*/
+h1{
+	font-size: 60px;
+	font-family: 'Alegreya', serif;
+	font-style: normal;
+}
+
+h2{
+	font-style: normal;
+	font-family: 'Alegreya', serif;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+h3{
+	font-family: 'Amiri', serif;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+h4{
+	font-family: 'Alegreya', serif;
+	font-style: normal;
+	font-size: 20px;
+}
+
+/*Menu*/
+.navbar {
+	overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: transparent; /* Inicialment transparent */
+    transition: background-color 0.3s ease; /* Afegim una transició suau al canviar el color de fons */
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #333;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	border-radius: 5px;
+}
+
+.navbar a:hover {
+	/*background-color: #ddd;*/
+	color: white;
+}
+/*
+.navbar a.active {
+	background-color: #272727;
+	color: white;
+}*/
+
+/*
+.fade {
+opacity: 1;}
+*/
+
+
+/*galeria d'imatges*/
+.container {
+	margin: 0 auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.container img {
+    max-width: 100%; /* Assegura que les imatges no superin l'amplada del seu contenidor */
+    max-height: 400px; /* Estableix l'alçada màxima desitjada */
+	height: auto; /* Manté l'escala correcta de l'alçada en relació amb l'amplada */
+}
+
+/*imatge ampliada*/
+.lightbox {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 9999;
+	text-align: center;
+}
+
+.lightbox img {
+	max-height: 90vh;
+	max-width: 90vw;
+	margin-top: 5vh;
+}
+
+/*projects*/
+.projects {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 20px;
+	margin-top: 20px;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: auto;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+}
+
+.projects:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	cursor: pointer;
+}
+
+/*galeria d'imatges gran*/
+.biggallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.biggallery img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.bg-text {
+    color: white;
+	font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bg-overlay:hover {
+    opacity: 1;
+}
+
+/* Móviles en horizontal o tablets en vertical */
+@media (max-width: 767px) { 
+    .image-gallery {
+        columns:2;
+    }
+	.logo img{
+		width: 5px;
+		height: 5px;
+	}
+
+}
+        
+/* Móviles en vertical */
+@media (max-width: 480px) {
+    .image-gallery {
+        columns: 1;
+    }
+	h1{
+	font-size: 40px;
+	}
+
+	h2{
+	font-size: 20px;
+	}
+	.title{
+	background-size: 100% auto;
+	}
+	.info {
+		flex-direction: column; /* Cambia la dirección del flexbox a columna */
+		text-align: center; /* Centra el texto en dispositivos móviles */
+		margin-right: 0; /* Elimina el margen derecho en dispositivos móviles */
+	}
+	.logo img{
+		width: 5px;
+		height: 5px;
+	}
+}
+
+.logo img{
+	width: 100px;
+	height: 100px;
+}
+
+.logo img:hover{
+	transform: scale(1.3);
+}
+
+/*definim titol*/
+.title{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-size: 30px;
+	overflow: auto;
+	/*background-attachment: fixed;*/
+}
+ /*definim separadors*/
+
+.separador{
+	margin: 100px;
+}
+
+footer{
+	text-align: center;
+	margin: 50px;
+}
+
+.wrapper .carousel{
+	white-space: nowrap;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.wrapper{
+	max-width: 1200px;
+	text-align: center;
+	margin: 50px;
+	padding: 15px 0;
+}
+
+
+.carousel img{
+	height: 340px;
+	width: calc(100%/3);
+	object-fit: cover;
+	margin-left: 14px;
+}
+
+.about{
+	background-color: #efedee;
+	background-size: cover;
+	width: 100%;
+}
+
+.about-me{
+	height: 90vh;
+	display: flex;
+    align-items: center;
+	margin: 0;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.info {
+	padding: 5px;
+	box-sizing: content-box;
+	justify-content: space-between;
+    text-align: left;
+	line-height: 1.5;
+	margin-right: 80px;
+}
+
+.btn{
+	border: none;
+	padding: 10px; /*espacio alrededor texto*/
+	/*border-radius: 5px; bordes redondos*/
+	background-color: transparent;
+	cursor: pointer;
+	font-family: montserrat;
+	font-size: 20px;
+	color: #272727;
+}
+
+.btn:hover{
+	box-shadow: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+	transition: transform 150ms;
+	transform: scale(1.03);
+	color: #cbddd1;
+}
+
+.btn-right{
+	border: none;
+	padding: 10px; /*espacio alrededor texto*/
+	/*border-radius: 5px; bordes redondos*/
+	background-color: transparent;
+	cursor: pointer;
+	font-family: montserrat;
+	position: absolute;
+    	top: 20px;
+    	right: 20px;
+	font-size: 20px;
+	color: #272727;
+}
+
+.btn-right:hover{
+	box-shadow: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+	transition: transform 150ms;
+	transform: scale(1.03);
+	color: #cbddd1;
+}
+
+.photo{
+	flex: 0 0 30%;
+    margin-right: 20px;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	color: #272727;
+	cursor: pointer;
+  }
+
+a:hover{
+	color: #cbddd1;
+}
+
