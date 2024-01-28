@@ -12,98 +12,39 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Alegreya:ital@0&display=swap" rel="stylesheet">
 	<style>
-		.gallery {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-			grid-gap: 20px;
-			margin-top: 20px;
-		}
-
-		.gallery img {
-			width: 100%;
-			height: auto;
-			border-radius: 5px;
-			cursor: pointer;
-		}
-		img{
-			/*opacity: 0;*/
-			transition: 0.5s;
-			object-fit: contain;
-			width: 300px;
-			height: 300px;
-		}
-
-		img:hover{
-			transform: scale(1.02);
+		.openbtn {
+			color: #cbddd1;
 		}
 	</style>
 </head>
 <body>
 	<div class="portada">
-		<!--<form>
-			<input class="btn-right" type="button" value="Sobre Mi >>" onclick="window.location.href='contact.html'">
-		</form>-->
-		<div class="navbar">
-			<a class="active" href="#">Inici</a>
+
+		<!-- Botó per obrir el menú -->
+		<div class="openbtn" onclick="openNav()">&#9776;</div>
+
+		<!-- Menú lateral -->
+		<div class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#">Inici</a>
+			<a href="interiors.html">Interiors</a>
+			<a href="esport.html">Esports</a>
+			<a href="casaments.html">Casaments</a>
+			<a href="sessions.html">Sessions</a>
+			<a href="projectes.html">Projectes</a>
+			<a href="viatges.html">Viatges</a>
 			<a href="contact.html">Sobre Mi</a>
 		</div>
 
 		<div class="title">
-			<!--<div class="logo">
-				<a href="https://www.instagram.com/ber.tography/"><img src="ber_photos/photober.webp" alt="berta fotografia"></a>
-			</div>-->
 			<h1>BERTOGRAPHY</h1>
-			<h3>Fotògrafa a Girona | Interiors, casaments, sessions, esports i viatges</h3>
+			<h3>Fotògrafa a Girona <br>
+			Espais, esports, casaments, sessions</h3></h3>
 		</div>
 	</div>	
-	<div class="container">
-		<h2 class="separador">Fotografia</h2>
-        <div class="gallery">
-			<div class="projects">
-				<img src="ber_photos/interiors/interiors9.webp" alt="fotògrafa d'interiors">
-				<div class="overlay">
-					<div class="text" onclick="window.location.href='interiors.html'">Arquitectura</div>
-				</div>
-			</div>
-			<div class="projects">
-				<img src="ber_photos/casament/fotocasament4.webp" alt="fotògrafa de casament">
-				<div class="overlay">
-					<div class="text" onclick="window.location.href='casaments.html'">Casaments</div>
-				</div>
-			</div>
-			<div class="projects">
-				<img src="ber_photos/sessions/sessio3.webp" alt="sessions de fotos">
-				<div class="overlay">
-					<div class="text" onclick="window.location.href='sessions.html'">Sessions</div>
-				</div>
-			</div>
-			<div class="projects">
-				<img src="ber_photos/esport/esdevenimentskate.webp" alt="fotògrafa esportiva">
-				<div class="overlay">
-					<div class="text" onclick="window.location.href='esport.html'">Esports</div>
-				</div>
-			</div>
-        </div>
-    </div>
-	<div class="container">
-		<h2 class="separador">Projectes</h2>
-		<div class="biggallery">
-			<div class="gallery-item">
-				<img src="ber_photos/projectes/fotografiacarrer.webp" alt="fotògrafa de carrer" height="500px">
-				<div class="bg-overlay">
-					<div class="bg-text" onclick="window.location.href='projectes.html'">Fotografia de carrer</div>
-				</div>
-			</div>
-			<div class="gallery-item">
-				<img src="ber_photos/viatges/indonesia1.webp" alt="indonesia" >
-				<div class="bg-overlay">
-					<div class="bg-text" onclick="window.location.href='viatges.html'">Viatges</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
 
+	<script src="js/script.js"></script>	
+	
 	<footer>
 		<p>
 			© 2024 Berta Palahí. All rights reserved

@@ -113,10 +113,21 @@
 	</style>
 </head>
 <body>
-	<div class="navbar">
-		<a href="index.html">Inici</a>
-		<a class="active" href="#">Sobre Mi</a>
-	</div>
+	<!-- Botó per obrir el menú -->
+    <div class="openbtn" onclick="openNav()">&#9776;</div>
+
+    <!-- Menú lateral -->
+    <div class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Inici</a>
+        <a href="interiors.html">Interiors</a>
+        <a href="esport.html">Esports</a>
+        <a href="casaments.html">Casaments</a>
+        <a href="sessions.html">Sessions</a>
+        <a href="projectes.html">Projectes</a>
+        <a href="viatges.html">Viatges</a>
+        <a href="#">Sobre Mi</a>
+    </div>
 	
 	<div class="about">
 		<div class="about-me">
@@ -136,31 +147,34 @@
 			</div>
 		</div>
 	</div>
-	<h2>Contacta</h2>
+	<h2><a href="mailto:correu@example.com">palahi.berta@gmail.com</a></h2>
+	<!--
 	<div class="form">
 		<form action="processar_formulari.php" method="post">
-			<!-- Nom -->
+			
 			<label for="nom">Nom</label>
 			<input type="text" id="nom" name="nom" required>
 	
 			<br>
 	
-			<!-- Correu electrònic -->
+			
 			<label for="email">Correu electrònic</label>
 			<input type="email" id="email" name="email" required>
 	
 			<br>
 	
-			<!-- Missatge -->
+			
 			<label for="missatge">Missatge</label>
 			<textarea id="missatge" name="missatge" rows="4" required></textarea>
 	
 			<br>
 	
-			<!-- Botó d'enviament -->
+			
 			<input type="submit" value="Enviar">
 		</form>
-	</div>
+	</div> -->
+
+	<script src="js/script.js"></script>	
 
 	<footer>
 		<p>

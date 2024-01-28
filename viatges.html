@@ -9,10 +9,21 @@
     <title>Viatges</title>
 </head>
 <body>
-    <div class="navbar">
-		<a href="index.html">Inici</a>
-		<a href="contact.html">Sobre Mi</a>
-	</div>
+    <!-- Botó per obrir el menú -->
+    <div class="openbtn" onclick="openNav()">&#9776;</div>
+
+    <!-- Menú lateral -->
+    <div class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Inici</a>
+        <a href="interiors.html">Interiors</a>
+        <a href="esport.html">Esports</a>
+        <a href="casaments.html">Casaments</a>
+        <a href="sessions.html">Sessions</a>
+        <a href="projectes.html">Projectes</a>
+        <a href="#">Viatges</a>
+        <a href="contact.html">Sobre Mi</a>
+    </div>
 
     <div class="container">
         <div class="grid" data-masonry='{ "columnWidth": 200, "itemSelector": ".grid-item" }'>
@@ -42,6 +53,8 @@
         <img src="ber_photos/viatges/africa2.webp" alt="projectes" onclick="openLightbox('ber_photos/viatges/africa2.webp')">
         </div>
     </div>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
