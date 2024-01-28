@@ -1,3 +1,4 @@
+// mostrar imatges quan cliques
 function openLightbox(imageUrl) {
     var lightbox = document.querySelector('.lightbox');
     var lightboxImage = document.getElementById('lightbox-image');
@@ -10,14 +11,27 @@ function closeLightbox() {
     lightbox.style.display = 'none';
 }
 
-// jQuery
+// galeria masonry
 $('.grid').masonry({
     columnWidth: 100,
     itemSelector: '.grid-item'
   });
 
-// vanilla JS
 var msnry = new Masonry( '.grid', {
     columnWidth: 150,
     itemSelector: '.grid-item'
   });
+
+//eliminar botó dret
+document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+});
+
+//menu lateral - sidebar
+function openNav() {
+  document.querySelector(".sidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.querySelector(".sidenav").style.width = "0";
+}
