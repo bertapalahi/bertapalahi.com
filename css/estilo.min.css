@@ -1,9 +1,3 @@
-/** {
-	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
-}*/
-
 /*fons de la pagina total*/
 body{
 	font-family: 'Alegreya', serif;
@@ -17,7 +11,7 @@ body{
 
 /*portada*/
 .portada{
-	background-image: url(../ber_photos/elcel.webp);
+	background-image: url(../ber_photos/flor.JPG);
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
@@ -59,45 +53,55 @@ h4{
 }
 
 /*Menu*/
-.navbar {
-	overflow: hidden;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: transparent; /* Inicialment transparent */
-    transition: background-color 0.3s ease; /* Afegim una transició suau al canviar el color de fons */
+.openbtn {
+	color: #272727;
+	font-size: 40px;
+	padding: auto;
+	cursor: pointer;
+	margin-left: 20px;
 }
 
-.navbar a {
-	float: left;
-	display: block;
-	color: #333;
-	text-align: center;
-	padding: 14px 16px;
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
 	text-decoration: none;
-	font-size: 17px;
-	border-radius: 5px;
+	font-size: 18px;
+	color: #cbddd1;
+	display: block;
+	transition: 0.3s;
 }
 
-.navbar a:hover {
-	/*background-color: #ddd;*/
-	color: white;
+.sidenav a:hover {
+	color: #f1f1f1;
 }
-/*
-.navbar a.active {
-	background-color: #272727;
-	color: white;
-}*/
 
-/*
-.fade {
-opacity: 1;}
-*/
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
 
+.logo{
+	text-align: center;
+}
+
+.logo img{
+	margin: 0 auto; /* Centra la imatge horitzontalment */
+}
 
 /*galeria d'imatges*/
 .container {
@@ -105,6 +109,7 @@ opacity: 1;}
 	padding: 20px;
 	margin-top: 20px;
 	text-align: center;
+	/*background-color: #cbddd1;*/
 }
 
 .container img {
@@ -221,47 +226,9 @@ opacity: 1;}
     opacity: 1;
 }
 
-/* Móviles en horizontal o tablets en vertical */
-@media (max-width: 767px) { 
-    .image-gallery {
-        columns:2;
-    }
-	.logo img{
-		width: 5px;
-		height: 5px;
-	}
-
-}
-        
-/* Móviles en vertical */
-@media (max-width: 480px) {
-    .image-gallery {
-        columns: 1;
-    }
-	h1{
-	font-size: 40px;
-	}
-
-	h2{
-	font-size: 20px;
-	}
-	.title{
-	background-size: 100% auto;
-	}
-	.info {
-		flex-direction: column; /* Cambia la dirección del flexbox a columna */
-		text-align: center; /* Centra el texto en dispositivos móviles */
-		margin-right: 0; /* Elimina el margen derecho en dispositivos móviles */
-	}
-	.logo img{
-		width: 5px;
-		height: 5px;
-	}
-}
-
 .logo img{
-	width: 100px;
-	height: 100px;
+	width: 50px;
+	height: 50px;
 }
 
 .logo img:hover{
@@ -392,5 +359,72 @@ a {
 
 a:hover{
 	color: #cbddd1;
+}
+
+/* Móviles en horizontal o tablets en vertical */
+/* Estils específics per a mòbils */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    .navbar a {
+        font-size: 5vw;
+        padding: 10px 12px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+	.container img {
+        max-width: 80%; /* Redueix la mida màxima de les imatges al 80% de l'amplada del seu contenidor */
+    }
+
+    .projects {
+        grid-gap: 5px;
+    }
+
+    .biggallery img {
+        max-width: none;
+        max-height: none;
+    }
+}
+        
+/* Móviles en vertical */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    .navbar a {
+        font-size: 3vw;
+        padding: 8px 10px;
+    }
+
+    .container {
+        padding: 2px;
+    }
+
+	.container img {
+        max-width: 80%; /* Redueix la mida màxima de les imatges al 80% de l'amplada del seu contenidor */
+    }
+
+    .projects {
+        grid-gap: 2px;
+    }
+
+    .biggallery img {
+        max-width: none;
+        max-height: none;
+    }
 }
 
