@@ -23,6 +23,7 @@
 		img:hover{
 			transform: scale(1.02);
 		}
+		
 
         .img1 {
             width: 200px;
@@ -85,9 +86,17 @@
 		}
 
 		.social-container {
-            top: 10px;
-            right: 10px;
+            display: flex; /* Permet que el contenedor tingui la mida del text */
+			align-items: center;
+			justify-content: center;
+    		vertical-align: middle; /* Centra verticalment el contenedor */
+    		margin-top: 10px; /* Ajusta el marge superior segons les teves preferències */
+    		margin-right: 10px; /* Ajusta el marge dret segons les teves preferències */
         }
+
+		.social-container:hover{
+			transform: scale(1.1); /* Hacer que el botón se agrande al 110% cuando el cursor está sobre él */
+		}
 
         .instagram-btn {
             background-color: #cbddd1;
@@ -110,6 +119,11 @@
             height: 20px;
             margin-right: 5px;
         }
+
+		.container p{
+			text-align: justify;
+			margin: 80px;
+		}
 	</style>
 </head>
 <body>
@@ -127,51 +141,21 @@
         <a href="viatges.html">Viatges</a>
         <a href="#">Sobre Mi</a>
     </div>
-	
-	<div class="about">
-		<div class="about-me">
-			<div class="photo">
-				<!--<img src="ber_photos/woman.webp" alt="berta amb la càmara a la mà" class="img1">
-				--><img src="ber_photos/bertography.JPG" alt="berta amb la càmara a la mà" class="img2">
-			</div>
-			<div class="info">
-				<h4>Berta Palahí</h4>
-				<p>De Girona. Amb la càmera a la mà des dels dotze anys. M'agrada molt observar, i intento captar allò que em sembla bonic. De la fotografia busco l'espontaneïtat i transmetre emocions. Cada vegada que capturo és una oportunitat per a explicar una història, per a captar la bellesa en els detalls més petits i per a immortalitzar instants plens de significat. El meu objectiu és crear imatges autèntiques i emotives que connectin amb les persones i els facin sentir. Acompanya'm en aquest viatge!</p>
-				<div class="social-container">
-					<a href="https://www.instagram.com/ber.tography" target="_blank" class="instagram-btn">
-						<img src="ber_photos/instagram-icon.webp" alt="Instagram Icon" class="instagram-icon">
-						Segueix-me per saber-ne més
-					</a>
-				</div>
-			</div>
+
+	<div class="container">
+		<div class="grid" data-masonry='{ "columnWidth": 200, "itemSelector": ".grid-item" }'>
+			<p>De Girona. Amb la càmera a la mà des dels dotze anys. M'agrada molt observar, i intento captar allò que em sembla bonic. De la fotografia busco l'espontaneïtat i transmetre emocions. Cada vegada que capturo és una oportunitat per a explicar una història, per a captar la bellesa en els detalls més petits i per a immortalitzar instants plens de significat. El meu objectiu és crear imatges autèntiques i emotives que connectin amb les persones i els facin sentir. Acompanya'm en aquest viatge!</p>
+			<img src="ber_photos/bertapalahi.JPG" alt="berta amb la càmara a la mà" class="img2">
+			<!--<img src="ber_photos/bertography.JPG" alt="fotògrafa" >-->
 		</div>
 	</div>
 	<h2><a href="mailto:correu@example.com">palahi.berta@gmail.com</a></h2>
-	<!--
-	<div class="form">
-		<form action="processar_formulari.php" method="post">
-			
-			<label for="nom">Nom</label>
-			<input type="text" id="nom" name="nom" required>
-	
-			<br>
-	
-			
-			<label for="email">Correu electrònic</label>
-			<input type="email" id="email" name="email" required>
-	
-			<br>
-	
-			
-			<label for="missatge">Missatge</label>
-			<textarea id="missatge" name="missatge" rows="4" required></textarea>
-	
-			<br>
-	
-			
-			<input type="submit" value="Enviar">
-		</form>
-	</div> -->
+	<div class="social-container">
+		<a href="https://www.instagram.com/ber.tography" target="_blank" class="instagram-btn">
+			<img src="ber_photos/instagram-icon.webp" alt="Instagram Icon" class="instagram-icon">
+			Segueix-me per saber-ne més
+		</a>
+	</div>
 
 	<script src="js/script.js"></script>	
 
