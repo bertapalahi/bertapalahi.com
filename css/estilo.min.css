@@ -392,7 +392,7 @@ a:hover{
     }
 
 	.container img {
-        max-width: 80%; /* Redueix la mida màxima de les imatges al 80% de l'amplada del seu contenidor */
+        max-width: 30%; /* Redueix la mida màxima de les imatges al 80% de l'amplada del seu contenidor */
     }
 
     .projects {
@@ -436,7 +436,7 @@ a:hover{
     }
 
 	.container img {
-        max-width: 80%; /* Redueix la mida màxima de les imatges al 80% de l'amplada del seu contenidor */
+        max-width: 30%; /* Redueix la mida màxima de les imatges al 80% de l'amplada del seu contenidor */
     }
 
     .projects {
