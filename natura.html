@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="utf-8">
+	<meta name="fotografa a girona" content="fotografies i contacte">
+	<meta name="description" content="Pagina de fotografa, contiene fotografias e información de la fotografa">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="ber_photos/photober.webp" />
+    <link rel="stylesheet" href="css/estilo.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <title>Natura</title>
+</head>
+<style>
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        padding: 10px;
+    }
+</style>
+<body>
+	<!-- Botó per obrir el menú -->
+    <div class="openbtn" onclick="openNav()">&#9776;</div>
+
+    <!-- Menú lateral -->
+    <div class="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Inici</a>
+        <a href="interiors.html">Espais</a>
+        <a href="#">Natura</a>
+        <a href="esport.html">Esports</a>
+        <a href="sessions.html">Sessions</a>
+        <a href="projectes.html">Reportatges</a>
+        <a href="viatges.html">Viatges</a>
+        <a href="contact.html">Sobre Mi</a>
+    </div>
+
+    <div class="container">
+        <h2>Fotografia de natura</h2>
+            <p>El motiu pel qual em vaig apassionar per la fotografia eren les fotografies de flors
+                és per això que no pot faltar un apartat a la web de fotografia de natura. La natura
+                em transmet bellesa i per això m'agrada tant fotografiar-la.
+            </p>
+        <div class="grid" data-masonry='{ "columnWidth": 100, "itemSelector": ".grid-item" }'>
+            <img src="ber_photos/natura/natura1.webp" alt="fotografia de natura">
+            <img src="ber_photos/natura/natura2.webp" alt="fotografia de natura">
+            <img src="ber_photos/natura/natura3.webp" alt="fotografia de natura">
+            <img src="ber_photos/natura/natura4.webp" alt="fotografia de natura">
+            <img src="ber_photos/natura/natura5.webp" alt="fotografia de natura">
+            <img src="ber_photos/natura/natura6.webp" alt="fotografia de natura">
+            <img src="ber_photos/natura/natura7.webp" alt="fotografia de natura">
+            <img src="ber_photos/natura/natura8.webp" alt="fotografia de natura">
+            <img src="ber_photos/natura/natura9.webp" alt="fotografia de natura">
+            <img src="ber_photos/natura/natura10.webp" alt="fotografia de natura">
+            <img src="ber_photos/natura/natura11.webp" alt="fotografia de natura">
+            <img src="ber_photos/natura/natura12.webp" alt="fotografia de natura">
+            <img src="ber_photos/natura/natura13.webp" alt="fotografia de natura">
+            <img src="ber_photos/natura/natura14.webp" alt="fotografia de natura">
+            <img src="ber_photos/natura/natura15.webp" alt="fotografia de natura">
+            <img src="ber_photos/natura/natura16.webp" alt="fotografia de natura">
+        </div>
+    </div>
+
+    <div class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-image" src="" alt="Imagen Ampliada">
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
