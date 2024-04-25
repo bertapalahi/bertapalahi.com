@@ -6,38 +6,47 @@
 	<meta name="description" content="Pagina de fotografa, contiene fotografias e información de la fotografa">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="ber_photos/photober.webp" />
-    <link rel="stylesheet" href="css/estilo.min.css">
-    <title>Espais</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-    <!--<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">-->
+    	<link rel="stylesheet" href="css/estilo.min.css">
+    	<title>Espais</title>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    	<!--<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">-->
     <style>
-        .imatge {
-            text-align: center;
-            margin: 20px;
-            position: relative; /* Afegeix una posició relativa al contenidor de la imatge */
-        }
+	.imatge {
+	    text-align: center;
+	    margin: 20px;
+	    position: relative; /* Afegeix una posició relativa al contenidor de la imatge */
+	}
 
-        .imatge a {
-            text-decoration: none;
-            color: inherit;
-            display: block; /* Fes l'enllaç un element de bloc perquè ocupi tot l'espai disponible */
-            overflow: hidden; /* Evita que el text es desborde fora de la imatge */
-        }
+	.imatge a {
+	    text-decoration: none;
+	    color: inherit;
+	    display: block; /* Fes l'enllaç un element de bloc perquè ocupi tot l'espai disponible */
+	    overflow: hidden; /* Evita que el text es desborde fora de la imatge */
+	}
 
-        .imatge img {
-            max-width: 100%;
-            height: auto;
-        }
+	.imatge img {
+	    max-width: 100%;
+	    height: auto;
+	}
 
-        .text {
-            position: absolute; /* Afegeix una posició absoluta per col·locar el text sobre la imatge */
-            bottom: 0; /* Col·loca el text a la part inferior */
-            width: 100%; /* Fes que el text ocupe tot l'ample del contenidor de la imatge */
-            background-color: rgba(255, 255, 255, 0.7); /* Fons semi-transparent per millorar llegibilitat */
-            padding: 10px; /* Espaiat interior del text */
-        }
+	.text {
+	    position: absolute; /* Afegeix una posició absoluta per col·locar el text sobre la imatge */
+	    bottom: 0; /* Col·loca el text a la part inferior */
+	    width: 100%; /* Fes que el text ocupe tot l'ample del contenidor de la imatge */
+	    background-color: rgba(255, 255, 255, 0.7); /* Fons semi-transparent per millorar llegibilitat */
+	    padding: 10px; /* Espaiat interior del text */
+	}
     </style>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JJ3F5CHLGD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JJ3F5CHLGD');
+</script>
 <body>
 	<!-- Botó per obrir el menú -->
     <div class="openbtn" onclick="openNav()">&#9776;</div>
