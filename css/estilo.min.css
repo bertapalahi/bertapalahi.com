@@ -125,9 +125,9 @@ h4{
 }
 
 .container img {
-    max-width: 100%; /* Assegura que les imatges no superin l'amplada del seu contenidor */
-    max-height: 400px; /* Estableix l'alçada màxima desitjada */
-	height: auto; /* Manté l'escala correcta de l'alçada en relació amb l'amplada */
+    max-width: 300px; /* Assegura que les imatges no superin l'amplada del seu contenidor */
+    max-height: 300px; /* Estableix l'alçada màxima desitjada */
+	border-radius: 5px; /* Afegeix vores arrodonides a les imatges */
 }
 
 /*imatge ampliada*/
